@@ -1,0 +1,107 @@
+
+body{
+    display:flex;
+    justify-content: center;
+    
+}
+
+#main_div{
+    height: 500px;
+    width:600px;
+    background-color: lightgray;
+    padding-top:20px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#calculator{
+    height:50px;
+    width:90%;
+    background-color:black;
+    color:aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    font-weight:700;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#display{
+  height:80px;
+  width:90%;
+  background-color: aliceblue;
+  border-radius: 5px;
+  display:flex;
+  justify-content: end;
+  align-items: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1px;
+  font-size: xx-large;
+}
+#button_container{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+
+}
+
+.buttons{
+    height:60px;
+    width:22.5%;
+    background-color:white;
+    margin:4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+.operator{
+    background-color:rgb(215, 49, 23);
+    color:white;
+}
+#zero{
+    width:46.5%;
+}
+ .buttons:hover{
+    background-color: rgb(209, 200, 200);
+    color:white;
+    transition: 0.15s;
+}
+.operator:hover{
+    background-color: rgb(255, 0, 0) ;
+    transition:0.15s;
+}
+/* #button_container > div :hover{
+    background-color: green;
+} */ 
+
+#AC{
+    border-top-left-radius: 20px;
+    background-color: rgb(255, 94, 0);
+    color:white;
+    font-weight: 900;
+}
+#AC:hover{
+    background-color: orange !important;
+}
+
+#divide{
+    border-top-right-radius: 20px;
+}
+#zero{
+    border-bottom-left-radius: 20px;
+}
+#equals{
+    border-bottom-right-radius: 20px;
+}
+
+
