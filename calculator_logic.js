@@ -22,7 +22,8 @@ for(var i=0;i<buttons.length;i++){
                 display.innerText="";
               }else if(text=='='){
                 operand2=parseFloat(display.textContent);                
-               operand1=eval(operand1+" "+operator+" "+operand2);
+               if(operator!='%')operand1=eval(operand1+" "+operator+" "+operand2);
+               else operand1=operand1*operand2/100;
                if(operand1==Infinity||(!operand1)) operand1='Error';
                display.innerText=operand1;
               }else{
